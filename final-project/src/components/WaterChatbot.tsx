@@ -44,10 +44,16 @@ export function WaterChatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hello! I'm your Water Vision AI Assistant. I can help you with water level predictions, rainfall impact analysis, and trend information. What would you like to know?",
+      text: "Hello! I'm your AI Assistant. I can help you with water level predictions, rainfall impact analysis. \nWhat would you like to ask about?\n1. Water level\n2. Rainfall impact\n3. Model accuracy",
       sender: "bot",
       timestamp: new Date(),
     },
+    // {
+    //   id: 1,
+    //   text: "Hello! I'm your Water Vision AI Assistant. I can help you with water level predictions, rainfall impact analysis, and trend information. What would you like to know?",
+    //   sender: "bot",
+    //   timestamp: new Date(),
+    // },
   ]);
   const [input, setInput] = useState("");
 
@@ -89,7 +95,7 @@ export function WaterChatbot() {
       </div>
 
       {/* Sample Questions */}
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <p className="text-sm text-gray-600 mb-2">Try asking:</p>
         <div className="flex flex-wrap gap-2">
           {sampleQuestions.map((q, idx) => (
@@ -102,7 +108,7 @@ export function WaterChatbot() {
             </button>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Chat Messages */}
       <div className="h-96 overflow-y-auto mb-4 space-y-4 p-4 bg-gray-50 rounded-lg">
@@ -112,7 +118,7 @@ export function WaterChatbot() {
             className={`flex gap-3 ${message.sender === "user" ? "flex-row-reverse" : ""}`}
           >
             <div
-              className={`p-2 rounded-lg ${
+              className={`flex p-2 rounded-lg items-center ${
                 message.sender === "user" ? "bg-blue-100" : "bg-white shadow"
               }`}
             >

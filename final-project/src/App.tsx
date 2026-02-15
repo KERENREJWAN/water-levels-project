@@ -182,10 +182,7 @@ export default function App() {
             <div className="bg-white rounded-lg shadow p-6">
               <h3 className="mb-3">About the AI Assistant</h3>
               <p className="text-sm text-gray-600 mb-4">
-                Our AI-powered chatbot provides instant access to water management data,
-                predictions, and analysis. It uses natural language processing to understand
-                your questions and retrieves real-time information from our database and
-                ML prediction models.
+                Our AI-powered chatbot provides instant access to water level data, predictions, and analysis. It retrieves real-time information from our database and ML prediction models.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-4 bg-blue-50 rounded-lg">

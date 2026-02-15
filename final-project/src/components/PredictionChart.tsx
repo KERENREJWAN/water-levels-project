@@ -8,7 +8,7 @@ interface PredictionChartProps {
 const generateData = () => {
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const data = [];
-  
+
   // Historical data (12 months)
   for (let i = 0; i < 12; i++) {
     data.push({
@@ -17,7 +17,7 @@ const generateData = () => {
       isHistorical: true,
     });
   }
-  
+
   // Future predictions
   const lastActual = data[data.length - 1].actual;
   data.push(
@@ -25,7 +25,7 @@ const generateData = () => {
     { month: "Week 2", predicted2Week: lastActual + 0.5, isHistorical: false },
     { month: "Month 1", predicted1Month: lastActual + 0.8, isHistorical: false }
   );
-  
+
   return data;
 };
 
@@ -34,7 +34,13 @@ export function PredictionChart({ waterSourceName }: PredictionChartProps) {
 
   return (
     <div className="bg-white rounded-lg shadow p-6">
-      <h3 className="mb-4">{waterSourceName} - Water Level Forecast</h3>
+      <div className="flex items-center justify-between mb-4">
+        <h3>{waterSourceName} - Water Level Forecast</h3>
+        <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
+          <img src="./src/images/export.svg"></img>
+          export
+        </button>
+      </div>
       <ResponsiveContainer width="100%" height={350}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -43,36 +49,36 @@ export function PredictionChart({ waterSourceName }: PredictionChartProps) {
           <Tooltip />
           <Legend />
           <ReferenceLine x="Dec" stroke="#666" strokeDasharray="3 3" label="Current" />
-          <Line 
-            type="monotone" 
-            dataKey="actual" 
-            stroke="#3b82f6" 
+          <Line
+            type="monotone"
+            dataKey="actual"
+            stroke="#3b82f6"
             strokeWidth={2}
             dot={{ fill: '#3b82f6' }}
             name="Historical Data"
           />
-          <Line 
-            type="monotone" 
-            dataKey="predicted1Week" 
-            stroke="#10b981" 
+          <Line
+            type="monotone"
+            dataKey="predicted1Week"
+            stroke="#10b981"
             strokeWidth={2}
             strokeDasharray="5 5"
             dot={{ fill: '#10b981' }}
             name="1 Week Forecast"
           />
-          <Line 
-            type="monotone" 
-            dataKey="predicted2Week" 
-            stroke="#f59e0b" 
+          <Line
+            type="monotone"
+            dataKey="predicted2Week"
+            stroke="#f59e0b"
             strokeWidth={2}
             strokeDasharray="5 5"
             dot={{ fill: '#f59e0b' }}
             name="2 Week Forecast"
           />
-          <Line 
-            type="monotone" 
-            dataKey="predicted1Month" 
-            stroke="#ef4444" 
+          <Line
+            type="monotone"
+            dataKey="predicted1Month"
+            stroke="#ef4444"
             strokeWidth={2}
             strokeDasharray="5 5"
             dot={{ fill: '#ef4444' }}
@@ -80,7 +86,7 @@ export function PredictionChart({ waterSourceName }: PredictionChartProps) {
           />
         </LineChart>
       </ResponsiveContainer>
-      
+
       <div className="mt-4 p-4 bg-blue-50 rounded-lg">
         <p className="text-sm text-blue-800">
           <strong>ML Model Info:</strong> Last updated: Dec 2024 | Accuracy: 94.2% | Model version: v2.3.1

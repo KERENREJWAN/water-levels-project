@@ -36,7 +36,12 @@ export function RainfallImpactChartProps({ waterSourceName }) {
 
   return (
     <div className="bg-white rounded-lg shadow p-6">
-      <h3 className="mb-2">Rainfall Region Heatmap</h3>
+       <div className="flex items-center justify-between mb-2">
+        <h3 className="mb-2">Rainfall Region Heatmap</h3>
+        <button className="px-2 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+            <img src="./src/images/export.svg"></img>
+        </button>
+      </div>
       <p className="text-sm text-gray-600 mb-4">
         Monthly contribution of rainfall regions to {waterSourceName} water level changes
       </p>

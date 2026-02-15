@@ -35,8 +35,13 @@ export function DailyChangeChart({ data, title = "Daily Change (previous month)"
     const chartData = data ?? makeDemoData(30);
 
     return (
-        <div className="bg-white rounded-lg shadow p-4">
-            <h4 className="mb-2 text-sm font-medium">{title}</h4>
+      <div className="bg-white rounded-lg shadow p-4">
+        <div className="flex items-center justify-between mb-2">
+          <h3>{title}</h3>
+          <button className="px-2 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+              <img src="./src/images/export.svg"></img>
+          </button>
+        </div>
             <div style={{ width: "100%", height: 220 }}>
                 <ResponsiveContainer>
                     <LineChart data={chartData}>

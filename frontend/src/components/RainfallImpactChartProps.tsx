@@ -1,8 +1,8 @@
 import React from "react";
 
-// interface RainfallImpactChartProps {
-//   waterSourceName: string;
-// }
+interface RainfallImpactChartProps {
+  waterSourceName: string;
+}
 
 // Example matrix data: regions × months (values = impact % contribution)
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
@@ -29,7 +29,7 @@ function getColor(value) {
 }
 
 export function RainfallImpactChartProps({ waterSourceName }) {
-  // compute global min/max if you want normalized scale (optional)
+  // compute global min/max for normalized scale
   const allValues = rainfallMatrix.flatMap((r) => r.values);
   const max = Math.max(...allValues);
   const min = Math.min(...allValues);

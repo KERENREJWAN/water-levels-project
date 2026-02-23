@@ -53,6 +53,7 @@ export function PredictionVsActualChart({ data, title = "Predicted vs Actual (pr
             <YAxis />
             <Tooltip />
             <Legend verticalAlign="top" height={24} />
+            {/* also add for 1 week ago, 2 weeks ago and 1 month ago */}
             <Line type="monotone" dataKey="actual" stroke="#10b981" strokeWidth={2} dot={false} name="Actual" />
             <Line type="monotone" dataKey="predicted" stroke="#ef4444" strokeWidth={2} dot={false} strokeDasharray="4 4" name="Predicted" />
           </LineChart>

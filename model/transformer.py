@@ -25,20 +25,20 @@ class PositionalEncoding(nn.Module):
 class KinneretTransformer(nn.Module):
     def __init__(self, input_dim, model_dim=64, num_heads=4, num_layers=3, dropout=0.1):
         super(KinneretTransformer, self).__init__()
-        
+
         # Project raw features (e.g., 85 features) to model dimension (64)
         self.input_projection = nn.Linear(input_dim, model_dim)
         self.pos_encoder = PositionalEncoding(model_dim)
-        
+
         encoder_layers = nn.TransformerEncoderLayer(
-            d_model=model_dim, 
-            nhead=num_heads, 
-            dim_feedforward=model_dim * 4, 
+            d_model=model_dim,
+            nhead=num_heads,
+            dim_feedforward=model_dim * 4,
             dropout=dropout,
             batch_first=True
         )
         self.transformer_encoder = nn.TransformerEncoder(encoder_layers, num_layers=num_layers)
-        
+
         # Regression head to predict the 7-day water level change
         self.decoder = nn.Sequential(
             nn.Linear(model_dim, 32),
@@ -52,9 +52,9 @@ class KinneretTransformer(nn.Module):
         x = self.input_projection(x)
         x = self.pos_encoder(x)
         x = self.transformer_encoder(x)
-        
+
         # Take the state of the final day in the window (day 30) for prediction
-        x = x[:, -1, :] 
+        x = x[:, -1, :]
         return self.decoder(x)
 
 # ==========================================
@@ -64,7 +64,7 @@ class KinneretDataset(Dataset):
     def __init__(self, data_path):
         if not os.path.exists(data_path):
             raise FileNotFoundError(f"Missing {data_path}. Run preprocessing script first.")
-        
+
         data = np.load(data_path)
         self.X = torch.tensor(data['X'], dtype=torch.float32)
         self.y = torch.tensor(data['y'], dtype=torch.float32).unsqueeze(1)
@@ -82,14 +82,14 @@ def run_training():
     # Load Data
     full_dataset = KinneretDataset('kinneret_training_data.npz')
     input_size = full_dataset.X.shape[2]
-    
+
     # Split: 80% train, 20% validation (Temporal split)
     train_size = int(0.8 * len(full_dataset))
     train_loader = DataLoader(Subset(full_dataset, range(train_size)), batch_size=32, shuffle=True)
     val_loader = DataLoader(Subset(full_dataset, range(train_size, len(full_dataset))), batch_size=32)
 
     # Init Model, Loss, Optimizer
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if hasattr(torch, 'cuda') and torch.cuda.is_available() else "cpu")
     model = KinneretTransformer(input_dim=input_size).to(device)
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.parameters(), lr=0.0005)
@@ -97,13 +97,13 @@ def run_training():
     print(f"Starting training on {device}...")
     best_val_loss = float('inf')
 
-    for epoch in range(100):
+    for epoch in range(1000):
         # Train
         model.train()
         total_train_loss = 0
         for batch_X, batch_y in train_loader:
             batch_X, batch_y = batch_X.to(device), batch_y.to(device)
-            
+
             optimizer.zero_grad()
             outputs = model(batch_X)
             loss = criterion(outputs, batch_y)

@@ -4,7 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 import joblib
 
 # Load and sort data
-df_final = pd.read_csv('model/df_final.csv', parse_dates=['date'])
+df_final = pd.read_csv('model/df_final_2025.csv', parse_dates=['date'])
 df = df_final.copy().sort_values('date')
 df['date'] = pd.to_datetime(df['date'], dayfirst=True, errors='coerce')
 
@@ -26,11 +26,11 @@ df = df.dropna(subset=['target_diff'])
 features_to_use = df.drop(columns=['date', 'target_diff'])
 
 # Normalize all features (including our new seasonal ones) to [0, 1]
-scaler = MinMaxScaler()
-scaled_features = scaler.fit_transform(features_to_use)
+# scaler = MinMaxScaler()
+# scaled_features = scaler.fit_transform(features_to_use)
 
 # Save the scaler for future use
-joblib.dump(scaler, 'model/kinneret_scaler.pkl')
+# joblib.dump(scaler, 'model/kinneret_scaler.pkl')
 
 # --- STEP 4: Create Sliding Windows (30 Days Input) ---
 def create_sequences(data, targets, window_size=30):
@@ -43,10 +43,11 @@ def create_sequences(data, targets, window_size=30):
     return np.array(X), np.array(y)
 
 window_size = 30
-X, y = create_sequences(scaled_features, df['target_diff'].values, window_size)
+df.sort_values('date').reset_index(drop=True)
+X, y = create_sequences(features_to_use, df['target_diff'].values, window_size)
 
 # --- STEP 5: Save the Prepared Data ---
-np.savez_compressed('model/kinneret_training_data.npz', X=X, y=y)
+np.savez_compressed('model/kinneret_training_data_2025.npz', X=X, y=y)
 
 print("Preprocessing Complete with Seasonal Encoding.")
 print(f"Features included: {list(features_to_use.columns)}")

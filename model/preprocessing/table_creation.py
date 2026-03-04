@@ -7,7 +7,7 @@ def preprocess_kinneret_data(level_data, rain_data, weather_data):
     # 1. Process Water Level Data (Forward Fill for missing days)
     # ---------------------------------------------------------
     df_level = pd.DataFrame(level_data)
-    df_level['Survey_Date'] = pd.to_datetime(df_level['Survey_Date'], format='%d/%m/%Y')
+    df_level['Survey_Date'] = pd.to_datetime(df_level['Survey_Date'], dayfirst=True)
     df_level = df_level.set_index('Survey_Date')[['Kinneret_Level']]
     
     # Resample to daily and fill missing days with the last known value
@@ -17,7 +17,7 @@ def preprocess_kinneret_data(level_data, rain_data, weather_data):
     # 2. Process Daily Rainfall Data (Fill ALL missing with 0)
     # ---------------------------------------------------------
     df_rain = pd.DataFrame(rain_data)
-    df_rain['date'] = pd.to_datetime(df_rain['date'], format='%d/%m/%Y')
+    df_rain['date'] = pd.to_datetime(df_rain['date'], dayfirst=True)
     df_rain = df_rain.drop('cname', axis=1, errors='ignore').set_index('date')
     
     # Force all values to numeric (turns blanks/strings into NaN)
@@ -31,7 +31,7 @@ def preprocess_kinneret_data(level_data, rain_data, weather_data):
     # 3. Process 3-Hourly Weather Data (Max Daily + Neighbors)
     # ---------------------------------------------------------
     df_weather = pd.DataFrame(weather_data)
-    df_weather['date'] = pd.to_datetime(df_weather['date'], format='%d-%m-%Y %H:%M')
+    df_weather['date'] = pd.to_datetime(df_weather['date'], format='%d-%m-%Y %H:%M', dayfirst=True)
     df_weather['date_only'] = df_weather['date'].dt.floor('D')
     
     city_cols = [col for col in df_weather.columns if col not in ['date', 'cname', 'date_only']]
@@ -71,19 +71,22 @@ def preprocess_kinneret_data(level_data, rain_data, weather_data):
 
     # Bring the Date index back out as a standard column
     df_final = df_final.reset_index(names='date')
+    # For 2025 data
+    day_of_year = df_final['date'].dt.dayofyear
+    df_final['day_sin'] = np.sin(2 * np.pi * day_of_year / 365.25)
+    df_final['day_cos'] = np.cos(2 * np.pi * day_of_year / 365.25)
     
     return df_final
 
 # Load datasets
-with open('model/training_data/kinneret.json') as f:
+with open('model/training_data/2025/kinneret.json') as f:
     df_kinneret = pd.DataFrame(json.load(f))
 
-with open('model/training_data/rain.json') as f:
+with open('model/training_data/2025/rain.json') as f:
     df_rain = pd.DataFrame(json.load(f))
 
-with open('model/training_data/weather.json') as f:
+with open('model/training_data/2025/weather.json') as f:
     df_weather = pd.DataFrame(json.load(f))
 
 df_final = preprocess_kinneret_data(df_kinneret, df_rain, df_weather)
-df_final.to_csv('model/df_final.csv', index=False)
-print("df_final saved to 'df_final.csv'")
+df_final.to_csv('model/df_final_2025.csv', index=False)

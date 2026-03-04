@@ -1,0 +1,645 @@
+[
+	{
+		"date": "10/01/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.8,
+		"Amiad": 0.5,
+		"Kfar_Blum": 1,
+		"Capernaum": 0.7,
+		"Samakh": 10.6,
+		"Gamla": 0.2,
+		"Marom_Golan": 4.4
+	},
+	{
+		"date": "11/01/2025",
+		"cname": "Daily rainfall",
+		"Marom_Golan": 0.1
+	},
+	{
+		"date": "12/01/2025",
+		"cname": "Daily rainfall",
+		"Amiad": 0.1
+	},
+	{
+		"date": "22/01/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 0.9,
+		"Amiad": 0.1,
+		"Kfar_Blum": 0.1,
+		"Capernaum": 0.6,
+		"Samakh": 0.1,
+		"Gamla": 0.1
+	},
+	{
+		"date": "23/01/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 2.8,
+		"Tzfat_Har_Kenaan": 0.6,
+		"Amiad": 0.2,
+		"Kfar_Blum": 1.5,
+		"Capernaum": 0.1,
+		"Samakh": 2.6,
+		"Gamla": 1.9,
+		"Marom_Golan": 0.4
+	},
+	{
+		"date": "24/01/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Blum": 0.1
+	},
+	{
+		"date": "31/01/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.6,
+		"Tzfat_Har_Kenaan": 1.2,
+		"Amiad": 0.3,
+		"Kfar_Blum": 0.5,
+		"Capernaum": 0.5,
+		"Samakh": 2.5,
+		"Gamla": 0.8,
+		"Marom_Golan": 0.7
+	},
+	{
+		"date": "05/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 46.3,
+		"Tzfat_Har_Kenaan": 24.2,
+		"Amiad": 16,
+		"Kfar_Blum": 34.7,
+		"Capernaum": 17.1,
+		"Samakh": 12.9,
+		"Gamla": 18,
+		"Marom_Golan": 38.3
+	},
+	{
+		"date": "06/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 3.4,
+		"Tzfat_Har_Kenaan": 2.2,
+		"Amiad": 0.4,
+		"Kfar_Blum": 2.7,
+		"Capernaum": 0.1,
+		"Gamla": 0.5,
+		"Marom_Golan": 2.2
+	},
+	{
+		"date": "07/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.8,
+		"Tzfat_Har_Kenaan": 1.1,
+		"Amiad": 0.3,
+		"Kfar_Blum": 0.5,
+		"Samakh": 0.2,
+		"Gamla": 0.1,
+		"Marom_Golan": 2
+	},
+	{
+		"date": "08/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.1,
+		"Tzfat_Har_Kenaan": 0.5
+	},
+	{
+		"date": "09/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 1.8,
+		"Tzfat_Har_Kenaan": 2.2,
+		"Amiad": 0.9,
+		"Kfar_Blum": 0.5,
+		"Capernaum": 0.2,
+		"Samakh": 1.1,
+		"Marom_Golan": 0.6
+	},
+	{
+		"date": "10/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 5.6,
+		"Tzfat_Har_Kenaan": 0.9,
+		"Amiad": 0.9,
+		"Kfar_Blum": 1.6,
+		"Capernaum": 1.4,
+		"Samakh": 2.2,
+		"Gamla": 2.7,
+		"Marom_Golan": 1.6
+	},
+	{
+		"date": "11/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.2,
+		"Tzfat_Har_Kenaan": 0.1,
+		"Amiad": 1.2,
+		"Kfar_Blum": 0.1,
+		"Capernaum": 0.6,
+		"Gamla": 0.1,
+		"Marom_Golan": 0.2
+	},
+	{
+		"date": "12/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 12.7,
+		"Tzfat_Har_Kenaan": 10.4,
+		"Amiad": 7.4,
+		"Kfar_Blum": 11.9,
+		"Capernaum": 10.5,
+		"Samakh": 5.6,
+		"Gamla": 9.2,
+		"Marom_Golan": 11.4
+	},
+	{
+		"date": "13/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 1.5,
+		"Tzfat_Har_Kenaan": 1.2,
+		"Kfar_Blum": 0.8,
+		"Capernaum": 0.7,
+		"Samakh": 0.4,
+		"Gamla": 1.3,
+		"Marom_Golan": 5.9
+	},
+	{
+		"date": "15/02/2025",
+		"cname": "Daily rainfall",
+		"Gamla": 0.1,
+		"Marom_Golan": 1
+	},
+	{
+		"date": "19/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 4.1,
+		"Tzfat_Har_Kenaan": 5.6,
+		"Amiad": 1.4,
+		"Kfar_Blum": 2.8,
+		"Capernaum": 1.9,
+		"Samakh": 1.6,
+		"Gamla": 2.5,
+		"Marom_Golan": 4
+	},
+	{
+		"date": "20/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 6.8,
+		"Tzfat_Har_Kenaan": 3.8,
+		"Amiad": 2.8,
+		"Kfar_Blum": 3.1,
+		"Capernaum": 3,
+		"Samakh": 2.2,
+		"Gamla": 4.1,
+		"Marom_Golan": 11.2
+	},
+	{
+		"date": "21/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Blum": 0.1
+	},
+	{
+		"date": "22/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.2,
+		"Tzfat_Har_Kenaan": 0.9
+	},
+	{
+		"date": "23/02/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.6,
+		"Tzfat_Har_Kenaan": 0.2,
+		"Kfar_Blum": 0.1
+	},
+	{
+		"date": "24/02/2025",
+		"cname": "Daily rainfall",
+		"Capernaum": 0.1
+	},
+	{
+		"date": "28/02/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 0.3,
+		"Capernaum": 0.2
+	},
+	{
+		"date": "06/03/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 0.6,
+		"Amiad": 0.4,
+		"Samakh": 1.4,
+		"Gamla": 0.6,
+		"Marom_Golan": 1.2
+	},
+	{
+		"date": "07/03/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.1,
+		"Tzfat_Har_Kenaan": 12.5,
+		"Amiad": 5.5,
+		"Kfar_Blum": 0.2,
+		"Capernaum": 3,
+		"Samakh": 1,
+		"Gamla": 3.5,
+		"Marom_Golan": 5.1
+	},
+	{
+		"date": "10/03/2025",
+		"cname": "Daily rainfall",
+		"Amiad": 4.4
+	},
+	{
+		"date": "17/03/2025",
+		"cname": "Daily rainfall",
+		"Amiad": 0.1,
+		"Capernaum": 0.1
+	},
+	{
+		"date": "19/03/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 16.7,
+		"Tzfat_Har_Kenaan": 5.4,
+		"Amiad": 2.2,
+		"Kfar_Blum": 5.1,
+		"Capernaum": 2.9,
+		"Samakh": 1.6,
+		"Gamla": 9.2,
+		"Marom_Golan": 15.6
+	},
+	{
+		"date": "20/03/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 26.7,
+		"Tzfat_Har_Kenaan": 8.2,
+		"Amiad": 5.4,
+		"Kfar_Blum": 8.1,
+		"Capernaum": 6,
+		"Samakh": 5.6,
+		"Gamla": 14.7,
+		"Marom_Golan": 16
+	},
+	{
+		"date": "21/03/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 1,
+		"Tzfat_Har_Kenaan": 0.1,
+		"Samakh": 1.4,
+		"Gamla": 0.4,
+		"Marom_Golan": 0.2
+	},
+	{
+		"date": "28/03/2025",
+		"cname": "Daily rainfall",
+		"Capernaum": 0.1
+	},
+	{
+		"date": "01/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.2,
+		"Kfar_Blum": 0.1,
+		"Gamla": 0.1,
+		"Marom_Golan": 0.3
+	},
+	{
+		"date": "09/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.3,
+		"Tzfat_Har_Kenaan": 0.3,
+		"Kfar_Blum": 0.2,
+		"Marom_Golan": 0.7
+	},
+	{
+		"date": "10/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 2.2,
+		"Kfar_Blum": 0.2
+	},
+	{
+		"date": "11/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 7.1,
+		"Tzfat_Har_Kenaan": 3.5,
+		"Amiad": 5.9,
+		"Kfar_Blum": 3.2,
+		"Capernaum": 1.7,
+		"Samakh": 0.4,
+		"Gamla": 5.4,
+		"Marom_Golan": 7.6
+	},
+	{
+		"date": "12/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.1,
+		"Tzfat_Har_Kenaan": 0.2,
+		"Samakh": 3,
+		"Marom_Golan": 0.3
+	},
+	{
+		"date": "13/04/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 0.6,
+		"Samakh": 0.1,
+		"Marom_Golan": 7.7
+	},
+	{
+		"date": "14/04/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 5.2,
+		"Tzfat_Har_Kenaan": 3.9,
+		"Amiad": 0.5,
+		"Kfar_Blum": 1.1,
+		"Capernaum": 1.1,
+		"Gamla": 1.2,
+		"Marom_Golan": 2.8
+	},
+	{
+		"date": "30/04/2025",
+		"cname": "Daily rainfall",
+		"Marom_Golan": 0.5
+	},
+	{
+		"date": "04/05/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.1,
+		"Marom_Golan": 2.4
+	},
+	{
+		"date": "05/05/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.5,
+		"Kfar_Blum": 0.2,
+		"Samakh": 0.1,
+		"Gamla": 3.2,
+		"Marom_Golan": 1.8
+	},
+	{
+		"date": "13/05/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 0.4,
+		"Tzfat_Har_Kenaan": 0.5,
+		"Amiad": 0.2,
+		"Capernaum": 0.1,
+		"Marom_Golan": 0.9
+	},
+	{
+		"date": "24/09/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 2.4,
+		"Amiad": 6.4,
+		"Capernaum": 5.5,
+		"Samakh": 0.2,
+		"Gamla": 1.5
+	},
+	{
+		"date": "08/10/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 2.4,
+		"Tzfat_Har_Kenaan": 0.6,
+		"Kfar_Blum": 0.1,
+		"Marom_Golan": 0.6
+	},
+	{
+		"date": "09/10/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 6.7,
+		"Tzfat_Har_Kenaan": 1.1,
+		"Amiad": 3.9,
+		"Kfar_Blum": 0.1,
+		"Capernaum": 1.6,
+		"Samakh": 1,
+		"Gamla": 0.3,
+		"Marom_Golan": 4.4
+	},
+	{
+		"date": "12/11/2025",
+		"cname": "Daily rainfall",
+		"Gamla": 0.1,
+		"Marom_Golan": 0.2
+	},
+	{
+		"date": "13/11/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 3.5,
+		"Tzfat_Har_Kenaan": 2.4,
+		"Amiad": 2.4,
+		"Kfar_Blum": 4.7,
+		"Capernaum": 1.8,
+		"Samakh": 3.6,
+		"Gamla": 4.4,
+		"Marom_Golan": 0.9
+	},
+	{
+		"date": "14/11/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 39.9,
+		"Tzfat_Har_Kenaan": 11.8,
+		"Amiad": 5.5,
+		"Kfar_Blum": 28.1,
+		"Capernaum": 8.8,
+		"Samakh": 15.2,
+		"Gamla": 5.1,
+		"Marom_Golan": 26.5
+	},
+	{
+		"date": "15/11/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 11.7,
+		"Amiad": 12.4,
+		"Kfar_Blum": 0.4,
+		"Capernaum": 8,
+		"Samakh": 10,
+		"Gamla": 12.8,
+		"Marom_Golan": 2.7
+	},
+	{
+		"date": "24/11/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 5.1,
+		"Tzfat_Har_Kenaan": 8.9,
+		"Amiad": 7.4,
+		"Kfar_Blum": 5.7,
+		"Capernaum": 5.5,
+		"Samakh": 5.5,
+		"Gamla": 9.9,
+		"Marom_Golan": 9.5
+	},
+	{
+		"date": "25/11/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 2.2,
+		"Tzfat_Har_Kenaan": 1.1,
+		"Amiad": 1.9,
+		"Kfar_Blum": 1.7,
+		"Capernaum": 0.1,
+		"Samakh": 3.3,
+		"Gamla": 0.6,
+		"Marom_Golan": 1.4
+	},
+	{
+		"date": "30/11/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 4.3,
+		"Tzfat_Har_Kenaan": 3.6,
+		"Amiad": 3.8,
+		"Kfar_Blum": 5.4,
+		"Capernaum": 1.8,
+		"Samakh": 7.2,
+		"Gamla": 3,
+		"Marom_Golan": 10.9
+	},
+	{
+		"date": "01/12/2025",
+		"cname": "Daily rainfall",
+		"Samakh": 0.5
+	},
+	{
+		"date": "06/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 3.9,
+		"Tzfat_Har_Kenaan": 9.2,
+		"Amiad": 4.8,
+		"Kfar_Blum": 2.6,
+		"Capernaum": 15.4,
+		"Samakh": 15,
+		"Gamla": 12.5,
+		"Marom_Golan": 12.7
+	},
+	{
+		"date": "08/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 2.6,
+		"Tzfat_Har_Kenaan": 0.2,
+		"Kfar_Blum": 0.1,
+		"Capernaum": 0.1
+	},
+	{
+		"date": "09/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 10.5,
+		"Tzfat_Har_Kenaan": 15.3,
+		"Amiad": 14.4,
+		"Kfar_Blum": 10.5,
+		"Capernaum": 6.7,
+		"Samakh": 8.5,
+		"Gamla": 6.2,
+		"Marom_Golan": 8.8
+	},
+	{
+		"date": "10/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 16,
+		"Tzfat_Har_Kenaan": 13.4,
+		"Amiad": 8.9,
+		"Kfar_Blum": 8.8,
+		"Capernaum": 5.3,
+		"Samakh": 6.6,
+		"Gamla": 5.6,
+		"Marom_Golan": 14.5
+	},
+	{
+		"date": "11/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 18.8,
+		"Tzfat_Har_Kenaan": 13.2,
+		"Amiad": 18.3,
+		"Kfar_Blum": 9.3,
+		"Capernaum": 13.2,
+		"Samakh": 12.6,
+		"Gamla": 12.4,
+		"Marom_Golan": 14.4
+	},
+	{
+		"date": "12/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Blum": 0.1,
+		"Gamla": 0.1,
+		"Marom_Golan": 0.1
+	},
+	{
+		"date": "13/12/2025",
+		"cname": "Daily rainfall",
+		"Samakh": 0.1,
+		"Marom_Golan": 0.1
+	},
+	{
+		"date": "15/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 11.5,
+		"Tzfat_Har_Kenaan": 11.2,
+		"Amiad": 10.4,
+		"Kfar_Blum": 11.9,
+		"Capernaum": 10.1,
+		"Samakh": 11.8,
+		"Gamla": 12,
+		"Marom_Golan": 8.2
+	},
+	{
+		"date": "16/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 4.1,
+		"Tzfat_Har_Kenaan": 2.2,
+		"Amiad": 0.6,
+		"Kfar_Blum": 4.1,
+		"Capernaum": 0.5,
+		"Gamla": 0.7,
+		"Marom_Golan": 0.9
+	},
+	{
+		"date": "23/12/2025",
+		"cname": "Daily rainfall",
+		"Tzfat_Har_Kenaan": 0.1
+	},
+	{
+		"date": "26/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 7.1,
+		"Tzfat_Har_Kenaan": 6,
+		"Amiad": 15.2,
+		"Kfar_Blum": 2.9,
+		"Capernaum": 9.8,
+		"Samakh": 4.2,
+		"Gamla": 9,
+		"Marom_Golan": 2.9
+	},
+	{
+		"date": "27/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 25.3,
+		"Tzfat_Har_Kenaan": 16.5,
+		"Amiad": 23.9,
+		"Kfar_Blum": 15.4,
+		"Capernaum": 16.2,
+		"Samakh": 18.7,
+		"Gamla": 20.4,
+		"Marom_Golan": 28.9
+	},
+	{
+		"date": "28/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 24.7,
+		"Tzfat_Har_Kenaan": 4,
+		"Amiad": 3.8,
+		"Kfar_Blum": 6.8,
+		"Capernaum": 1.4,
+		"Samakh": 1.6,
+		"Gamla": 3.9,
+		"Marom_Golan": 9.9
+	},
+	{
+		"date": "29/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 5.2,
+		"Tzfat_Har_Kenaan": 13.5,
+		"Amiad": 14.7,
+		"Kfar_Blum": 9.7,
+		"Capernaum": 19.6,
+		"Samakh": 18.5,
+		"Gamla": 16.4,
+		"Marom_Golan": 22.3
+	},
+	{
+		"date": "31/12/2025",
+		"cname": "Daily rainfall",
+		"Kfar_Giladi": 7.1,
+		"Tzfat_Har_Kenaan": 17.8,
+		"Amiad": 7.6,
+		"Kfar_Blum": 6.3,
+		"Capernaum": 4.4,
+		"Samakh": 11,
+		"Gamla": 9.4,
+		"Marom_Golan": 12.9
+	}
+]
